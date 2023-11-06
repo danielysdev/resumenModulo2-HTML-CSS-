@@ -127,10 +127,8 @@
     
   }
   .section-content p {
-    margin-top: 60px;
+    margin-top: 30px;
     line-height: 30px;
-
-    
   }
 
   
@@ -153,7 +151,7 @@
   
   .section-content h3 {
     counter-increment: titleList;
-    padding-block-end: 8px;
+    margin-top: 70px;
   }
   
   .section-content h3::before {
