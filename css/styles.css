@@ -51,7 +51,7 @@
     margin-block-start: 30px;
     margin-block-end: 16px;
     font-weight: normal;
-    color: #2D4356;
+    color: #5b2563;
   }
   
   /* h1 + p {
@@ -59,7 +59,7 @@
   } */
   
   hr {
-    margin-block-start: 64px;
+    margin-block-start: 50px;
     margin-block-end: 64px;
     border-color: rgba(97, 97, 97, 0.2);
   }
@@ -126,6 +126,13 @@
     text-align: center;
     
   }
+  .section-content p {
+    margin-top: 60px;
+    line-height: 30px;
+
+    
+  }
+
   
   .section-content:first-of-type {
     margin: 0;
@@ -311,7 +318,7 @@
       
       font-size: 60px;
       margin-block-start: 64px;
-      color: #2D4356;
+      color: #435585;
     }
     .footer {
       background-color: #0E2954;
