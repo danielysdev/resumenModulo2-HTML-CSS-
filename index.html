@@ -36,6 +36,7 @@
               <nav>
                 <p class="dany">CONTENIDO</p>
                 <details open>
+                  
                   <summary>
                     TERMINAL DE COMANDOS
                   </summary>
@@ -60,6 +61,7 @@
                     </li>
                   </ol>
                 </details>
+                
                 <details>
                   <summary>
                     GIT y GITHUB
@@ -96,45 +98,40 @@
                   <summary>
                     HTML
                   </summary>
+                  <ol>
+                    <li>
+                      <a href="#html">Qué es HTML</a>
+                    </li>
+                    <li>
+                      <a href="#etiquetas">Qué son las etiquetas</a>
+                    </li>
+                    <li>
+                      <a href="#atributos">Qué son los atributos</a>
+                    </li>
+                    
+                  </ol>
                 </details>
+                
                 <details>
                   <summary>
                     CSS
                   </summary>
+                  <ol>
+                    <li>
+                      <a href="#css">Qué es CSS</a>
+                    </li>
+                    <li>
+                      <a href="#flexbox">Qué es FLEXBOX</a>
+                    </li>
+                    <li>
+                      <a href="#grid">Qué son GRID</a>
+                    </li>
+                    
+                  </ol>
                 </details>
               
                 
-                
-                
-                
-                
-                <details>
-
-
-                  <summary>
-                    Enlaces de diferentes vistas
-                  </summary>
-                  <ol>
-                    <li>
-                      <a href="./mode_dark/index.html">Dark mode</a>
-                    </li>
-                    <li>
-                      <a href="#market">Etiquetas</a>
-                    </li>
-                    <li>
-                      <a href="#dom">DOM</a>
-                    </li>
-                    <li>
-                      <a href="#semantic">Semántica</a>
-                    </li>
-                    <li>
-                      <a href="#attribute">Atributos</a>
-                    </li>
-                    <li>
-                      <a href="#aboutCSS">Qué es CSS</a>
-                    </li>
-                  </ol>
-                </details>
+               
               </nav>
             </header>
       </div>
@@ -189,48 +186,16 @@
           </p>
           <hr>
 
-          
-          
-          <blockquote>
-            <p>
-              “Este es el inicio de tu carrera como Desarrollador Web”
-            </p>
-            <p>
-              <span>
-                Danielys Beltrán
-              </span>
-            </p>
-          </blockquote>
         </section>
-        <hr>
+        
+                
         <section class="section-content">
           <h2> GIT Y GITHUB </h2>
           <h3 id="git">Qué es GIT</h3>
           <p>Git es un sistema de control de versiones. Esto significa que Git te ayuda a gestionar tus archivos de proyecto y mantiene un registro de todo el historial de las cosas en las que estás trabajando. Esto es especialmente útil para los desarrolladores, ya que cuando se trabaja en un proyecto, lo que primero se construye es una versión básica del mismo y luego se trata de mejorar añadiendo nuevas características o simplemente experimentando con lo ya escrito. El control de versiones entra en juego aquí, puesto que realiza un seguimiento automático de cada minuto de cambios en tu proyecto y te permite volver a una versión anterior sin importar cuántas veces hayan cambiado tus archivos
             <img src="img/img-git.png" alt="Logo de visual studio code" title="Logo de visual studio code">
-
           </p>
           
-          
-          
-<!--          
-
-  <pre>
-    <!--Esta forma podemos mostrar html dentro del navegador sin que lo pueda interpretar.-->
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-&lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</pre> 
--->
           <h3 id="github">Qué es GITHUB</h3>
           <p>GitHub es una plataforma basada en la nube construida alrededor de Git. La diferencia principal entre Git y GitHub es que Git es una herramienta open source que los desarrolladores instalan localmente para gestionar el código fuente, mientras que GitHub es un servicio en línea al que los desarrolladores que utilizan Git pueden conectarse y cargar o descargar recursos.
             <br>
@@ -250,45 +215,107 @@
             <img src="img/img-git-config.png" alt="Logo de visual studio code" title="Logo de visual studio code">
           </p>
 
+          <h3 id="iniciaGit">Inicia Git</h3>
+          <p>En tu proyecto local en tu computadora, inicializas un repositorio Git con el comando git init. Esto crea un nuevo repositorio Git en tu directorio actual, permitiendo a Git rastrear los cambios en tus archivos
+            <br>
+            <img src="img/img-git-init.png" alt="Logo de visual studio code" title="Logo de visual studio code">
+          </p>
 
+          <h3 id="statingRepositorio">Agrega al Stating y Repositorio</h3>
+          <p>Haces cambios en tus archivos y luego los agregas al área de preparación de Git con el comando git add ., que agrega todos tus archivos modificados al área de preparación de Git
+            <br>
+            <img src="img/img-git-add.png" alt="Logo de visual studio code" title="Logo de visual studio code">
+          </p>
+          <p>Una vez que estás satisfecho con tus cambios, los confirmas con el comando git commit -m "Mensaje descriptivo". Esto toma una "instantánea" de tus cambios y los guarda en el historial de tu proyecto
+            <img src="img/img-git-commit.png" alt="">
+          </p>
 
+          <h3 id="cuentaGithub">Crea una cuenta en GITHUB y vinculalo con tu repositorio de GIT</h3>
+          <p>Ve a la página de https://github.com y crea una cuenta. <br>
+            Crea un nuevo repositorio en la opción de repositorio “NEW”. <br>
+            Coloca el nombre de tu preferencia y le das a crear. <br>
+            Copia la clave SSH. <br>
+            Esta clave la vas a copiar en la terminal seguido del comando git remote add origin seguido de la clave SSH.
+            <br>
+            <img src="img/img-git-remote.png" alt="Logo de visual studio code" title="Logo de visual studio code">
+          </p>
 
-
-          <img src="./img/dom.png" alt="Document Object Model" title="Document Object Model" width="1000" height="500">
-          
-          <h3 id="configuracion">Configuración de GIT</h3>
-          <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
-          <h3 id="attribute">Atributos</h3>
-          <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src</p>
-          <h3 id="aboutCSS">CSS</h3>
-          <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML</p>
-          <img src="./img/image_css.png" alt="Cascading Style Sheets" title="Cascading Style Sheets">
+          <h3 id="vincularGit">Sube tus proyecto a GITHUB</h3>
+          <p>Finalmente, subes tus cambios a GitHub con el comando git push origin master, que sube tus cambios al repositorio remoto en GitHub
+            <br>
+            <img src="img/img-git-push.png" alt="imagen de referencia git push">
+            <hr>
+          </p>
         </section>
+        
+
+
         <section class="section-content">
-          <h2>Modelo de caja</h2>
-          <h3>El modelo de caja está compuesto por:</h3>
-          <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
-          <ol>
-            <li>Tamaño del del contenido / ancho y alto</li>
-            <li>Padding / Relleno</li>
-            <li>Border / Bordes</li>
-            <li>Margin / Márgenes</li>
-          </ol>
-          <h3>Propiedades físicas para el modelo de caja:</h3>
-          <ul>
-            <li>width / height</li>
-            <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
-            <li>border / border-top | border-right | border-bottom | border-left</li>
-            <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
-          </ul>
-          <h3>Propiedades lógicas para el modelo de caja:</h3>
-          <ul>
-            <li>inline-size / block-size</li>
-            <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
-            <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
-            <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
-          </ul>
+          <h2> HTML - Lenguaje de Marcas de Hipertexto </h2>
+          <h3 id="html">Qué es HTML</h3>
+          <p>HTML, que significa Lenguaje de Marcas de Hipertexto (HyperText Markup Language en inglés), es un lenguaje de marcado que se utiliza para estructurar y organizar el contenido en una página. <br>Un documento HTML se compone de varios elementos, que son las piezas fundamentales que construyen la página web. Los elementos de HTML constan de varias partes, incluyendo las etiquetas de apertura y cierre, el contenido y los atributos. <br> Aqui te muestro como se ve una pequeña parte de un HTML. <br>
+            <img src="img/img-html.png" alt="Logo de visual studio code" title="Logo de visual studio code">
+          </p>
+          
+          <h3 id="etiquetas">Que son las etiquetas</h3>
+          <p>Las etiquetas HTML son bloques de código que dan formato, funcionalidad y estructura al contenido de las páginas web. <br>Estos fragmentos sirven como indicadores o instrucciones para que un navegador muestre de forma adecuada la información contenida en tus documentos. <br>Las etiquetas HTML se utilizan para configurar diversas estructuras para los sitios web, como secciones, tablas, párrafos, enlaces y atributos. <br>
+            En este ejemplo, &lt;html&gt;, &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;h1&gt;, &lt;p&gt; son etiquetas de HTML. Entre las etiquetas se encuentra el contenido. 
+            <br>
+            <img src="img/img-html.png" alt="Logo de visual studio code" title="Logo de visual studio code"> <br>
+            Existen muchas otras etiquetas HTML disponibles que puedes utilizar para crear varios aspectos de tu sitio web. Por ejemplo, la etiqueta &lt;img&gt; se utiliza para insertar una imagen, la etiqueta &lt;a&gt; se utiliza para crear un enlace, la etiqueta &lt;table&gt; se utiliza para crear una tabla, y la etiqueta &lt;form&gt; se utiliza para crear un formulario html desde cero.
+
+            Es importante mencionar que todas las etiquetas HTML deben cerrarse, a menos que sean etiquetas de autocierre. Por ejemplo, la etiqueta &lt;br&gt; es una etiqueta de autocierre, lo que significa que no necesita una etiqueta de cierre
+          </p>
+                   
+          <h3 id="atributos">Que son los atributos</h3>
+          <p>Los atributos en HTML son valores adicionales que se pueden agregar a las etiquetas HTML para proporcionar información adicional sobre el elemento o ajustar su comportamiento. Estos atributos consisten en un nombre y un valor. Los atributos se colocan dentro de la etiqueta de apertura y son sensibles a mayúsculas y minúsculas
+            <br>
+            <img src="img/img-html-atributos.png" alt="Logo de visual studio code" title="Logo de visual studio code">
+          </p>
+          <p>En la imagen se muestran algunos ejemplos de atributos en HTML: <br>
+            <b>id</b>: Este atributo se utiliza para especificar un identificador único para un elemento. <br>
+            <b>style</b>: Este atributo se utiliza para aplicar estilos CSS en línea a un elemento. <br>
+            <b>href</b>: Este atributo se utiliza con la etiqueta &lt;a&gt; para especificar el enlace URL. <br>
+            <b>src</b>: Este atributo se utiliza con la etiqueta &lt;img&gt; para especificar la URL de la imagen que se va a mostrar. <br>
+            <b>alt</b>: Este atributo se utiliza con la etiqueta &lt;img&gt; para proporcionar un texto alternativo que se muestra si la imagen no se puede cargar.
+            
+          </p>
+          <hr>
+
         </section>
+
+        <section class="section-content">
+          <h2> CSS - HOJA DE ESTILOS EN CASCADA </h2>
+          <h3 id="css">Qué es CSS</h3>
+          <p>CSS significa Hojas de Estilo en Cascada (Cascading Style Sheets en inglés), es un lenguaje de hojas de estilo utilizado para describir la apariencia de un documento escrito en HTML. <br> Con CSS, puedes controlar el diseño de una página web, incluyendo colores, fuentes, márgenes, altura, ancho y otros aspectos visuales. <br>
+            <img src="img/img-html.png" alt="Logo de visual studio code" title="Logo de visual studio code">  
+          </p>
+
+          <h3 id="flexbox">Qué es FLEXBOX</h3>
+          <p>Flexbox (Flexible Box Layout) es un módulo de CSS que permite alinear y distribuir espacio entre los elementos de una página web, especialmente cuando las dimensiones de esos elementos son desconocidas o dinámicas. Por ejemplo, puedes usar Flexbox para crear una lista de elementos que se ajusta automáticamente al tamaño de la pantalla, con un espacio igual entre cada elemento. <br>
+            <img src="img/img-html.png" alt="Logo de visual studio code" title="Logo de visual studio code"> <br>
+
+            En este ejemplo, <b>.contenedor</b> es una clase que se aplica a un elemento div en tu HTML. El <b>display: flex;</b> hace que los elementos hijos de este div se dispongan en una línea flexible. El <b>justify-content: space-between;</b> distribuye el espacio restante de manera uniforme entre los elementos
+          </p>
+
+          <h3 id="grid">Qué es GRID</h3>
+          <p>CSS Grid, por otro lado, es una herramienta más avanzada que te permite crear diseños de cuadrícula complejos y responsivos. Puedes usar Grid para crear una cuadrícula de filas y columnas, y colocar elementos en cualquier lugar de esta cuadrícula. Por ejemplo, podrías usar Grid para crear una página con una barra lateral y un área de contenido principal, y hacer que ambos se ajusten automáticamente al tamaño de la pantalla. <br>
+            <img src="img/img-html.png" alt="Logo de visual studio code" title="Logo de visual studio code">
+          </p>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="section-content">
           <h2>¡Espero te sirva y te vuelvas un gran <strong>Frontend Developer</strong>!</h2>
           <div class="slider">
